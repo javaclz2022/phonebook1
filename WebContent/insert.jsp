@@ -23,7 +23,7 @@
 	
 	//응답은 리스트로 리다이렉트 시킨다.
 	//list.jsp 로 다시 요청한다.
-	response.sendRedirect("./list.jsp");
+	//response.sendRedirect("./list.jsp");
 		
 %>
 

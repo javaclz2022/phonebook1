@@ -26,12 +26,14 @@
 
 	<p>수정화면입니다. 아래의 항목을 수정하고 "수정"버튼을 클릭하세요</p>
 
-	이름(name) <input type="text" name="" value="<%=personVo.getName()%>"> <br>
-	핸드폰(hp) <input type="text" name="" value="<%=personVo.getHp()%>"> <br>
-	회사(company) <input type="text" name="" value="<%=personVo.getCompany()%>"> <br>
-	pk(personId) <input type="text" name="" value="<%=personVo.getPersonId()%>"> <br>
-	<button>수정</button>
-	
+
+	<form action="./update.jsp" method="get">
+		이름(name) <input type="text" name="name" value="<%=personVo.getName()%>"> <br>
+		핸드폰(hp) <input type="text" name="hp" value="<%=personVo.getHp()%>"> <br>
+		회사(company) <input type="text" name="company" value="<%=personVo.getCompany()%>"> <br>
+		pk(personId) <input type="text" name="id" value="<%=personVo.getPersonId()%>"> <br>
+		<button type="submit">수정</button>
+	</form>
 
 </body>
 </html>
